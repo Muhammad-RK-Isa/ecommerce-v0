@@ -1,7 +1,7 @@
 import { pgEnum, pgTable, text, timestamp } from "drizzle-orm/pg-core";
 import crypto from "node:crypto";
 
-const roles = pgEnum("role", ["user", "admin"]);
+export const roles = pgEnum("role", ["user", "admin"]);
 
 export const users = pgTable("users", {
 	id: text("id")
